@@ -1,3 +1,9 @@
+// Copyright 2022
+// Licensed under GPLv3
+// SEE the LICENSE file included.
+
+// File created by Tim Joyce 2022/01/08
+
 #ifndef VM_EDITOR_H
 #define VM_EDITOR_H
 
