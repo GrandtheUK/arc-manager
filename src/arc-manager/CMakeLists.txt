@@ -17,8 +17,11 @@ find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 set(PROJECT_SOURCES
         src/main.cpp
         src/mainwindow.cpp
+        src/vm_editor.cpp
         include/mainwindow.h
+        include/vm_editor.h
         ui/mainwindow.ui
+        ui/vm_editor.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
