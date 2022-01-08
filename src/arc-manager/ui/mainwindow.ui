@@ -13,7 +13,24 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
-  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QListWidget" name="vm_list">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
@@ -62,23 +79,20 @@
    <addaction name="action_new_vm"/>
    <addaction name="action_edit_vm"/>
   </widget>
-  <action name="action_new_vm">
-   <property name="icon">
-    <iconset theme="QStyle"/>
-   </property>
-   <property name="text">
-    <string>New Vm</string>
-   </property>
-   <property name="toolTip">
-    <string>Create a new libvfio vm</string>
-   </property>
-  </action>
   <action name="action_edit_vm">
    <property name="text">
     <string>Edit Vm</string>
    </property>
    <property name="toolTip">
     <string>Edit Existing Vm</string>
+   </property>
+  </action>
+  <action name="action_new_vm">
+   <property name="text">
+    <string>New Vm</string>
+   </property>
+   <property name="toolTip">
+    <string>Create New Vm</string>
    </property>
   </action>
  </widget>

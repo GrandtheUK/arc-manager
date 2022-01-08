@@ -2,7 +2,7 @@
 #include "../ui/ui_vm_editor.h"
 
 vm_editor::vm_editor(QWidget *parent) :
-    QWidget(parent),
+    QWidget(parent,Qt::Window),
     ui(new Ui::vm_editor)
 {
     ui->setupUi(this);
