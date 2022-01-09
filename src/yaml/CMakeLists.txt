@@ -1,4 +1,4 @@
-add_library(yaml STATIC
+add_library(yaml-arc STATIC
     include/parser.h
     src/parser.cpp
 )
@@ -10,8 +10,8 @@ include_directories(
  ${YAML_CPP_INCLUDE_DIRS}
 )
 
-create_target_directory_groups(yaml)
+create_target_directory_groups(yaml-arc)
 
-target_link_libraries(yaml ${YAML_CPP_LIBRARIES})
+target_link_libraries(yaml-arc ${YAML_CPP_LIBRARIES})
 
 
