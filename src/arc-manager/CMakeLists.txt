@@ -47,7 +47,7 @@ else()
     endif()
 endif()
 
-target_link_libraries(arc-manager PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+target_link_libraries(arc-manager PRIVATE Qt${QT_VERSION_MAJOR}::Widgets yaml)
 
 set_target_properties(arc-manager PROPERTIES
     MACOSX_BUNDLE_GUI_IDENTIFIER my.example.com
